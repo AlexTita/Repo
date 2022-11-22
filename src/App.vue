@@ -1,9 +1,10 @@
-<script>
+<script setup>
+import TheStats from "./components/TheStats.vue";
 </script>
 
 <template>
-  <header><h1>Deck</h1></header>
+  <header><h1>Statistici</h1></header>
 
   <main>
-    TheDecks  </main>
+    <TheStats />  </main>
 </template>
