@@ -1,11 +1,11 @@
 <script>
 import Home from "./Home.vue";
-import Stats from "./Stats.vue";
+import Artists from "./Artists.vue";
 import NotFound from "./404.vue";
 import { useTheme } from "vuetify";
 const routes = {
   "/": Home,
-  "/stats": Stats,
+  "/artists": Artists,
 };
 
 export default {
@@ -40,15 +40,13 @@ export default {
 </script>
 
 <template>
-  <header><h1>Statistici</h1></header>
-
   <main>
     <main>
       <v-app>
-        <v-app-bar title="My Deck">
+        <v-app-bar title="Last Fm Statistics">
           <v-btn href="#/" icon="mdi-home"></v-btn>
-          <v-btn href="#/stats" icon="mdi-cards"></v-btn>
-          <v-btn @click="toggleTheme" icon="mdi-animation"></v-btn>
+          <v-btn href="#/artists" icon="mdi-account-music"></v-btn>
+          <v-btn @click="toggleTheme" icon="mdi-invert-colors"></v-btn>
         </v-app-bar>
         <v-main>
           <component :is="currentView" />

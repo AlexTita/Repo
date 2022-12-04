@@ -1,9 +1,9 @@
 <script setup>
-import TheDeck from "./components/TheStats.vue";
+import TheArtists from "./components/TheArtists.vue";
 </script>
 
 <template>
-  <TheDeck />
+  <TheArtists />
 </template>
 
 <style scoped>
