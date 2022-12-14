@@ -2,12 +2,14 @@
 import Home from "./Home.vue";
 import Artists from "./Artists.vue";
 import Tracks from "./Tracks.vue";
+import Search from "./SearchPage.vue";
 import NotFound from "./404.vue";
 import { useTheme } from "vuetify";
 const routes = {
   "/": Home,
   "/artists": Artists,
   "/tracks": Tracks,
+  "/search": Search,
 };
 
 export default {
@@ -49,6 +51,7 @@ export default {
           <v-btn href="#/" icon="mdi-home"></v-btn>
           <v-btn href="#/artists" icon="mdi-account-music"></v-btn>
           <v-btn href="#/tracks" icon="mdi-music-circle"></v-btn>
+          <v-btn href="#/search" icon="mdi-magnify"></v-btn>
           <v-btn @click="toggleTheme" icon="mdi-invert-colors"></v-btn>
         </v-app-bar>
         <v-main>

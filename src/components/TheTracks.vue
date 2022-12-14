@@ -34,10 +34,15 @@ export default {
       class="mx-auto my-12"
     >
       <v-img :src="track.image[3]['#text']"> </v-img>
-      <v-btn plain color="error" :href="track.url" exact="true">
+      <v-btn variant="plain" color="error" :href="track.url" exact="true">
         {{ track.name }}
       </v-btn>
-      <v-btn plain color="error" :href="track.artist.url" exact="true">
+      <v-btn
+        variant="plain"
+        color="error"
+        :href="track.artist.url"
+        exact="true"
+      >
         {{ track.artist.name }}
       </v-btn>
       <v-card-text>

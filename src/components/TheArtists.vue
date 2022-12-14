@@ -26,7 +26,7 @@ export default {
 <template>
   <v-btn @click="fetchArtists">Get my Artists</v-btn>
   <div v-if="allArtists">
-    <v-btn @click="showArtist"> Show Me The Artist </v-btn>
+    <v-btn @click="showArtist"> Show Me The Artists </v-btn>
     <v-card
       v-for="(artist, index) in artists"
       :key="index"
@@ -34,7 +34,7 @@ export default {
       class="mx-auto my-12"
     >
       <v-img :src="artist.image[3]['#text']"> </v-img>
-      <v-btn plain color="error" :href="artist.url" exact="true">
+      <v-btn variant="plain" color="error" :href="artist.url" exact="true">
         {{ artist.name }}
       </v-btn>
       <v-card-text>
